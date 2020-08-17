@@ -1,0 +1,136 @@
+body{
+    background-color: rgb(183, 255, 255);
+}
+
+
+/* container */
+#container::before{
+    display: block;
+    content: "";
+    background:url(Untitled-2-01.png) no-repeat center center/cover ;
+    /* background-color: black; */
+    position: absolute;
+    top:18px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#container{
+    display:flex;
+    /* background:url(Untitled-2-01.png) no-repeat center center/cover ; */
+    /* background-position: auto; */
+    
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 100%;
+    /* z-index: -2; */
+
+}
+
+#calculator{
+    height: 520px;
+    width: 346px;
+    background-color: rgb(255, 255, 255);
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* calculator styling */
+
+/* result part */
+#result{
+    height: 110px;
+}
+
+#history{
+    margin:0px 0px ;
+    /* margin-top: 10px; */
+    padding: 5px;
+    padding-top: 10px;
+    font-size: 15px;
+    /* border: 2px solid black; */
+}
+#historyvalue{
+    text-align: right;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-right: 25px;
+    margin: 0;
+    padding-top: 10px;
+    
+}
+
+#output{
+    font-size: 22px;
+    /* border: 2px solid black; */
+    padding: 2px ;
+    margin: 0px 0px;
+}
+#outputvalue{
+    text-align: right;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-right: 30px;
+    margin:0;
+    padding-top: 20px;
+
+}
+/* values part */
+#keyboard{
+    height: 410px;
+    padding: 10px;
+    padding-left: 19px;
+    margin: 0;
+    
+}
+/* button{ */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    /* padding: 25px;
+    margin: 7px;
+} */
+
+.operator, .number,.empty{
+    width: 50px;
+    height:50px;
+    margin:14px;
+    float: left;
+    border-radius: 50%;
+    border-width: 0ch;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    
+
+}
+
+.operator{
+    background-color: rgb(227, 227, 227);
+}
+button:nth-child(4){
+	font-size: 20px;
+	background-color: #ebff85;
+}
+button:nth-child(8){
+	font-size: 20px;
+	background-color: #e55e5e;
+}
+button:nth-child(12){
+	font-size: 20px;
+	background-color: #74d0fd;
+}
+button:nth-child(16){
+	font-size: 20px;
+	background-color: #ff92ed;
+}
+button:nth-child(20){
+	font-size: 20px;
+	background-color: #9477af;
+}
+
+.operator:focus,.empty:focus, .number:focus{
+    outline: 0;
+}
